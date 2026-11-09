@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Cartel de Metrópolis (1927)">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1b2f"/><stop offset="1" stop-color="#4a4e69"/></linearGradient></defs>
+<rect width="600" height="800" fill="url(#g)"/><path d="M140 620 L140 330 L200 270 L200 620 Z M220 620 L220 210 L300 150 L380 210 L380 620 Z M400 620 L400 300 L460 340 L460 620 Z" fill="#f2cc8f" opacity=".85"/><circle cx="300" cy="235" r="34" fill="#1b1b2f"/><circle cx="300" cy="235" r="14" fill="#f2cc8f"/><text x="300" y="690" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="bold" fill="#f2cc8f">Metrópolis</text>
+<text x="300" y="772" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#f2cc8f" opacity=".8">1927</text></svg>

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Cartel de Casablanca (1942)">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2d42"/><stop offset="1" stop-color="#8d99ae"/></linearGradient></defs>
+<rect width="600" height="800" fill="url(#g)"/><path d="M300 170 c-70 0 -95 60 -95 105 h190 c0 -45 -25 -105 -95 -105z" fill="#edf2f4"/><rect x="190" y="275" width="220" height="16" rx="8" fill="#edf2f4"/><path d="M215 300 h170 l35 310 h-240z" fill="#edf2f4" opacity=".8"/><path d="M120 610 q60 -90 120 0 q60 -90 120 0 q60 -90 120 0" stroke="#edf2f4" stroke-width="6" fill="none" opacity=".5"/><text x="300" y="690" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="bold" fill="#edf2f4">Casablanca</text>
+<text x="300" y="772" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#edf2f4" opacity=".8">1942</text></svg>

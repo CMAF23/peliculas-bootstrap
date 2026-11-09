@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo del Cine Clásico Universal</title>
+    <!-- CSS oficial de Bootstrap 6 desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Paso 2: Cabecera con barra de navegación responsiva -->
+    <header>
+        <nav class="navbar lg:navbar-expand shadow-sm py-3" data-bs-theme="light">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-lg" href="#">
+                    CineClásico
+                    <span class="fg-primary">.db</span>
+                </a>
+
+                <button
+                    class="navbar-toggler btn-icon"
+                    type="button"
+                    data-bs-toggle="drawer"
+                    data-bs-target="#navbarDrawer"
+                    aria-controls="navbarDrawer"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog
+                    class="drawer drawer-end lg:drawer"
+                    tabindex="-1"
+                    id="navbarDrawer"
+                    aria-labelledby="navbarDrawerLabel"
+                >
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+                    <div class="drawer-body mb-2 md:mb-0">
+                        <ul class="nav navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#hero">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#catalog">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#featured">Destacadas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Historia</a>
+                            </li>
+                        </ul>
+                        <form class="hstack gap-2" role="search">
+                            <input
+                                class="form-control"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button class="btn-solid btn-icon theme-secondary" type="submit" aria-label="Buscar">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <button type="button" class="theme-primary btn-outline">
+                                Mi Colección
+                            </button>
+                        </form>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Paso 3: Sección principal de bienvenida (Hero) -->
+    <section
+        id="hero"
+        class="bg-dark fg-light py-5 mb-5 border-bottom border-secondary"
+    >
+        <div class="container text-center py-4">
+            <div class="row justify-content-center">
+                <div class="lg:col-8">
+                    <span class="badge bg-primary text-uppercase px-5 py-3 mb-3 rounded-pill">Archivo Histórico Cinematográfico</span>
+                    <h1 class="fs-2xl fw-bold mb-3">
+                        Grandes Obras Maestras del Séptimo Arte
+                    </h1>
+                    <p class="lead text-light mb-3">
+                        Una travesía visual por los filmes que definieron el lenguaje
+                        narrativo, la dirección de arte y la banda sonora de la historia
+                        del cine.
+                    </p>
+                    <p class="fg-secondary small mb-4">
+                        Desde el expresionismo mudo de los años 20 hasta la revolución del
+                        color y la ciencia ficción de culto. Explora fichas técnicas,
+                        géneros y calificaciones verificadas.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#catalog" class="btn btn-primary btn-lg px-4">Explorar Catálogo</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-4">Saber Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paso 4: Catálogo con rejilla responsiva (Grid) y tarjetas (Cards) -->
+    <main id="catalog" class="container py-5">
+        <section class="row p-4 g-4">
+            <div class="lg:col-10">
+                <h2 class="fs-2xl fw-bold">Catálogo Principal de Películas</h2>
+                <p class="lead">Fichas de obras restauradas en alta definición</p>
+            </div>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Clásico Imperdible</div>
+                    <img src="images/metropolis.svg" class="card-img" alt="Cartel de Metrópolis (1927)" />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <span class="fg-primary">Ciencia ficción / Expresionismo</span>
+                    <span class="fg-warning">★ 8.3</span>
+                </div>
+                <h3 class="badge theme-success badge-outline fs-xl">Metrópolis</h3>
+                <div class="card-footer d-flex justify-content-between">
+                    <span class="px-5 py-2 border border-2 btn-outline">153 min</span>
+                    <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Clásico Imperdible</div>
+                    <img src="images/casablanca.svg" class="card-img" alt="Cartel de Casablanca (1942)" />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <span class="fg-primary">Drama / Romance</span>
+                    <span class="fg-warning">★ 8.5</span>
+                </div>
+                <h3 class="badge theme-success badge-outline fs-xl">Casablanca</h3>
+                <div class="card-footer d-flex justify-content-between">
+                    <span class="px-5 py-2 border border-2 btn-outline">102 min</span>
+                    <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Musical de Oro</div>
+                    <img src="images/cantando.svg" class="card-img" alt="Cartel de Cantando bajo la lluvia (1952)" />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <span class="fg-primary">Musical / Comedia</span>
+                    <span class="fg-warning">★ 8.3</span>
+                </div>
+                <h3 class="badge theme-success badge-outline fs-xl">Cantando bajo la lluvia</h3>
+                <div class="card-footer d-flex justify-content-between">
+                    <span class="px-5 py-2 border border-2 btn-outline">103 min</span>
+                    <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Suspenso Legendario</div>
+                    <img src="images/psicosis.svg" class="card-img" alt="Cartel de Psicosis (1960)" />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <span class="fg-primary">Suspenso / Terror</span>
+                    <span class="fg-warning">★ 8.5</span>
+                </div>
+                <h3 class="badge theme-success badge-outline fs-xl">Psicosis</h3>
+                <div class="card-footer d-flex justify-content-between">
+                    <span class="px-5 py-2 border border-2 btn-outline">109 min</span>
+                    <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Clásico Imperdible</div>
+                    <img src="images/2001.svg" class="card-img" alt="Cartel de 2001: Odisea del espacio (1968)" />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <span class="fg-primary">Ciencia ficción</span>
+                    <span class="fg-warning">★ 8.3</span>
+                </div>
+                <h3 class="badge theme-success badge-outline fs-xl">2001: Odisea del espacio</h3>
+                <div class="card-footer d-flex justify-content-between">
+                    <span class="px-5 py-2 border border-2 btn-outline">149 min</span>
+                    <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Obra Maestra</div>
+                    <img src="images/padrino.svg" class="card-img" alt="Cartel de El Padrino (1972)" />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <span class="fg-primary">Crimen / Drama</span>
+                    <span class="fg-warning">★ 9.2</span>
+                </div>
+                <h3 class="badge theme-success badge-outline fs-xl">El Padrino</h3>
+                <div class="card-footer d-flex justify-content-between">
+                    <span class="px-5 py-2 border border-2 btn-outline">175 min</span>
+                    <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Destacadas -->
+    <section id="featured" class="container py-5 border-top border-secondary">
+        <h2 class="fs-2xl fw-bold mb-4">Destacadas de la Semana</h2>
+        <div class="row g-4">
+            <div class="md:col-6">
+                <div class="card p-4 h-100">
+                    <span class="badge bg-primary rounded-pill mb-3">Restauración 4K</span>
+                    <h3 class="fs-xl fw-bold">El Padrino (1972)</h3>
+                    <p class="mb-0">La saga de la familia Corleone, con una fotografía en penumbra que cambió la manera de iluminar el cine.</p>
+                </div>
+            </div>
+            <div class="md:col-6">
+                <div class="card p-4 h-100">
+                    <span class="badge bg-primary rounded-pill mb-3">Edición de Colección</span>
+                    <h3 class="fs-xl fw-bold">2001: Odisea del espacio (1968)</h3>
+                    <p class="mb-0">Efectos visuales hechos a mano y música clásica que siguen marcando la ciencia ficción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="about" class="container py-5 border-top border-secondary">
+        <div class="row justify-content-center">
+            <div class="lg:col-8 text-center">
+                <h2 class="fs-2xl fw-bold mb-3">Historia del Archivo</h2>
+                <p class="lead">
+                    El Archivo del Cine Clásico Universal reúne fichas técnicas de películas que
+                    marcaron una época: del cine mudo alemán al Hollywood dorado y al nuevo cine de autor.
+                </p>
+                <p class="fg-secondary small">
+                    Cada ficha incluye género, duración y una calificación verificada para que puedas
+                    descubrir clásicos y armar tu propia colección.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container py-4 text-center border-top border-secondary fg-secondary small">
+        CineClásico.db · Archivo del Cine Clásico Universal · Práctica de Bootstrap 6
+    </footer>
+
+    <!-- Bundle JS oficial de Bootstrap 6 (en la versión 6 viene como módulo: por eso type="module") -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
